@@ -16,8 +16,8 @@ struct Matrix4x4 {
 };
 
 struct AABB {
-	Vector3 min; //!< 最小点
-	Vector3 max; //!< 最大点
+	Vector3 min;
+	Vector3 max;
 };
 
 Matrix4x4 Multiply(const Matrix4x4& m1, const Matrix4x4& m2);
@@ -36,7 +36,7 @@ int WINAPI WinMain(HINSTANCE, HINSTANCE, LPSTR, int) {
 	// ライブラリの初期化
 	Novice::Initialize(kWindowTitle, 1280, 720);
 	Vector3 cameraTranslate{ 0.0f,1.9f,-6.49f };
-	Vector3 cameraRotate{ 0.26F,0.0F,0.0F };
+	Vector3 cameraRotate{ 0.26f,0.0f,0.0f };
 
 	AABB aabb1 = {};
 	AABB aabb2 = {};
